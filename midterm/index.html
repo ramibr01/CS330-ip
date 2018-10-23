@@ -1,18 +1,31 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Midterm</title>
+        <title>Warframe</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
-        <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <div id='warframeWeb' class="container container-fluid card" align='left'>
-            <h2 class="card-header"> Warframe News <button type="button" class="btn btn-success" onclick="warframeapi()">Refresh</button></h2>
+            <h2 class="card-header"> Warframe </h2>
+        </div>
+        <p></p>
+        <header>
+            <h1 class="w100 text-center"><a href="index.html">Warframe Videos</a></h1>
+        </header>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form id="form" action="#">
+                    <p><input type="text" id="search" autocomplete="off" class="form-control" /></p>
+                    <p><input type="submit" alue="Search" class="form-control btn btn-primary w100"></p>
+                </form>
+                <div id="results"></div>
+            </div>
         </div>
         <p></p>
         <div id='warframeAlerts' class="container container-fluid card" align='center'>
-            <h2 class="card-header"> Warframe Alerts <button type="button" class="btn btn-success" onclick="warframealertsapi()" >Refresh</button></h2>
+            <h2 class="card-header"> Warframe Alerts </h2>
         </div>
         <p></p>
         <div id='steamWeb' class="container container-fluid card" align='center'>
@@ -20,39 +33,14 @@
             <p></p>
         </div>
         <p></p>
-        <div id="display" class="container container-fluid card" align='center'>
-            <h1>Weather Forecast</h1>
-
-            <input id="searchinput" type="text" placeholder="Search a city"/>
-            <button onclick="weatherPopulate()" type="button" class="btn btn-primary" id="search">Search</button>
-        
-            <p></p>
-            <div id="today" class="container container-fluid card" align='left'>
-                <h2>Today</h2>
-                <h3 id="city"> </h3>
-            </div>
-            <p></p>
-            <div id="tomorrow" class="container container-fluid card" align='left'>
-                <h2>Tomorrow</h2>
-            </div>
-            <p></p>
-            <div id="dayaftertomorrow" class="container container-fluid card" align='left'>
-                <h2>Day After Tomorrow</h2>
-            </div>
-            <p></p>
-        </div>
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-                
-        <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-        <!-- <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script> -->
 
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
-        <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src=index.js></script>
+        <script src="https://apis.google.com/js/client.js?onload=init"></script>
+
     </body>
 </html>
