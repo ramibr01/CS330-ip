@@ -1,0 +1,37 @@
+body {
+    padding-top: 25px;
+    /* background-color: black; */
+    background-image: url("https://wallpapertag.com/wallpaper/full/f/6/8/141903-download-warframe-background-2532x1536.jpg");
+    /* background-image: radial-gradient(black, rgb(0, 0, 180)); */
+    /* image-rendering: -webkit-optimize-contrast; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
+#warframeWeb {
+    padding-top: 20px;
+    opacity: .95;
+}
+
+#warframeAlerts {
+    opacity: .95;
+}
+
+#numLength{
+    width: 75px;
+}
+
+#steamWeb{
+    padding-top: 20px;
+    opacity: .95;
+}
+
+#display {
+    padding-top: 20px;
+    opacity: .95;
+}
+
+
+
