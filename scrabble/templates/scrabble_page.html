@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <h1>Scrabble Helper</h1>
+</div>
+
+<form action='/' name="form" method="GET">
+    <input type='text' name='letter1' size=7>
+    <input type='text' name='letter2' size=7>
+    <input type='text' name='letter3' size=7>
+    <input type='text' name='letter4' size=7>
+    <input type='text' name='letter5' size=7>
+    <input type='text' name='letter6' size=7>
+    <input type='text' name='letter7' size=7>
+
+    <div>
+        <input type="checkbox" name="addtoexisting" style="width:22px;height:22px;">Attach to existing<br>
+        <input type='text' name='existing' placeholder="Existing letter(s)" size=11>
+    </div>
+
+    <div>
+        <select class='form-control' name='dict' style="width:150px">
+            <option name='american' value="american">American</option>
+            <option name='british' value="british">British</option>
+        </select>
+    </div>
+
+    <div>
+        <input type="submit" name='submit' value='Submit' class="btn btn-info btn-lg">
+    </div>
+</form>
+
+<table class='table table-striped' border=1 style="border: 1px solid black;">
+        <thead>
+            <tr><th>Word</th> <th>Length</th> <th>Value</th></tr>
+        </thead>
+        <tbody id='primetbl'>
+            {% for item in data%}
+            <tr>
+                <th> {{ item[0] }} </th>
+                <th> {{ item[1]}} </th>
+                <th> {{ item[2]}} </th>
+            </tr>
+            {% endfor %}
+        </tbody>
+</table>
+
+{% endblock %}
