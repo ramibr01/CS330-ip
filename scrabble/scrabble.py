@@ -58,7 +58,6 @@ def index():
             words.append("Nothing found")
             wordslength.append("No length available")
             scores.append("No value available")
-            print(words)
             data = zip(words, wordslength, scores)
             return render_template("scrabble_page.html", data=data)
         
@@ -78,7 +77,6 @@ def index():
             sortedscores.append(newDict[w])
         
         sortedlengths = sorted(wordslength, key=int, reverse=False)
-        print(sortedlengths)
 
         data = zip(sortedwords, sortedlengths, sortedscores)    
 
