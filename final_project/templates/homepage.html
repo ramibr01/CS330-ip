@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container" align="center">
+
+    <div class="container container-fluid card" style="width: 100%; opacity: 0.85; background-color:white; border: 2px solid black; padding: 25px; bottom: 50%; transform: translate(0%, 83%);
+    ">
+        <h1>Movie DB</h1>
+        <h2>"All your movies are belong to us"</h2>
+    <br>
+        <form action="http://127.0.0.1:5000/add/form">
+            <input type="submit" class="form-control" value="Add a movie" style="width: 118px;"/>
+        </form>
+
+        <form action="http://127.0.0.1:5000/table">
+            <input type="submit" class="form-control" value="View Database" style="width: 140px;"/>
+        </form>
+
+        <form action="http://127.0.0.1:5000/edit_table">
+            <input type="submit" class="form-control" value="Edit Database" style="width: 140px;"/>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
